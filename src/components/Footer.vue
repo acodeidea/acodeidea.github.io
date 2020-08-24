@@ -36,14 +36,6 @@
           </ul>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-md">
-          <!-- Copyright -->
-          <p class="text-white copyright">
-            <small>&copy; Copyright 2020. All rights reserved.</small>
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 </template>

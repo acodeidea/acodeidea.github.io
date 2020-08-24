@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import NProgress from 'nprogress'
+// Pages
+import Home from './views/Home.vue';
 import TeamsFinder from './views/Teams_finder.vue'
 import Expense_claim_form from './views/Expense_claim_form.vue'
+import Spinner from './views/Spinner.vue';
 
 import '../node_modules/nprogress/nprogress.css'
 
@@ -11,8 +14,8 @@ Vue.use(Router);
 const routes = [
   {
     path: '/',
-    name: 'ExpenseClaimForm',
-    component: Expense_claim_form
+    name: 'Home',
+    component: Home
   },
   {
     path: '/teams-finder',
@@ -25,9 +28,14 @@ const routes = [
     component: Expense_claim_form
   },
   {
+    path: '/spinner',
+    name: 'Spinner',
+    component: Spinner
+  },
+  {
     path: '**',
-    name: 'ExpenseClaimForm',
-    component: Expense_claim_form
+    name: 'Home',
+    component: Home
   }
 ]
 

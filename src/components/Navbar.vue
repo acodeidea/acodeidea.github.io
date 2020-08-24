@@ -2,9 +2,9 @@
   <div id="navbar">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
-        <a class="navbar-brand smooth" href="https://www.acodeidea.com">
+        <router-link to="/" class="navbar-brand smooth" href="https://www.acodeidea.com">
           <img src="@/assets/img/acodeidea_logo.png" alt class="img-fluid" />
-        </a>
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,10 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item close-collapse">
-              <router-link class="nav-link" to="/expense-claim">Expense Claim Form</router-link>
-            </li>
-            <li class="nav-item close-collapse">
-              <router-link class="nav-link" to="/teams-finder">Teams Finder</router-link>
+              <a class="nav-link" href="https://www.acodeidea.com/">Visit Us</a>
             </li>
           </ul>
         </div>
