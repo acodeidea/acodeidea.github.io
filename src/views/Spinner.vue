@@ -22,7 +22,6 @@
 
 <script>
 import * as d3 from "d3";
-import axios from "axios";
 
 export default {
   name: "Spinner",
@@ -51,9 +50,7 @@ export default {
       rotation = 0,
       oldrotation = 0,
       picked = 100000,
-      oldpick = [],
       color = d3.scale.category20();
-
     var data = [
       { value: 1, color: "#1e90ff" },
       { value: 2, color: "#1e2a78" },
@@ -97,7 +94,7 @@ export default {
     var pie = d3.layout
       .pie()
       .sort(null)
-      .value(function (d) {
+      .value(function () {
         return 1;
       });
 
@@ -114,7 +111,7 @@ export default {
 
     arcs
       .append("path")
-      .attr("fill", function (d, i) {
+      .attr("fill", function (d) {
         return d.data.color;
       })
       .attr("d", function (d) {
@@ -146,7 +143,6 @@ export default {
       const index = Math.floor(Math.random() * employees.length);
       const employee = employees[index];
       selectEmployees.push(...employees.splice(index, 1));
-      console.log(selectEmployees);
       return employee;
     }
 
@@ -183,7 +179,7 @@ export default {
       .text("SPIN")
       .style({ "font-weight": "bold", "font-size": "30px", cursor: "pointer" });
 
-    function rotTween(to) {
+    function rotTween() {
       var i = d3.interpolate(oldrotation % 360, rotation);
       return function (t) {
         return "rotate(" + i(t) + ")";
@@ -195,7 +191,7 @@ export default {
     circle[0].addEventListener("click", spin);
     circleTxt.addEventListener("click", spin);
 
-    function spin(d) {
+    function spin() {
       circle[0].removeEventListener("click", spin);
       circle[0].addEventListener("click", null);
 
@@ -203,7 +199,6 @@ export default {
       circleTxt.addEventListener("click", null);
 
       var ps = 360 / data.length,
-        pieslice = Math.round(1440 / data.length),
         rng = Math.floor(Math.random() * 1440 + 360);
 
       rotation = Math.round(rng / ps) * ps;
