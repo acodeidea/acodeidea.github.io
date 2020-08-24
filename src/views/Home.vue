@@ -2,48 +2,13 @@
   <div id="home">
     <div class="container">
       <div class="row text-center">
-        <div class="col-md-4 col-12">
-          <div class="card shadow" @click="onNavigate('expense-claim')">
+        <div class="col-md-4 col-12" v-for="data in mainData" :key="data.id">
+          <div class="card shadow my-4" @click="onNavigate(`${data.navigation_path}`)">
             <div class="card-body">
               <div class="card-image pb-3">
-                <img
-                  src="https://image.flaticon.com/icons/svg/3176/3176361.svg"
-                  class="img-fluid"
-                  width="100"
-                  alt
-                />
+                <img :src="data.iconUrl" class="img-fluid" width="100" alt />
               </div>
-              <h5>Expense Claim</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="card shadow" @click="onNavigate('teams-finder')">
-            <div class="card-body">
-              <div class="card-image pb-3">
-                <img
-                  src="https://image.flaticon.com/icons/svg/993/993854.svg"
-                  class="img-fluid"
-                  width="100"
-                  alt
-                />
-              </div>
-              <h5>Teams Finder</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="card shadow" @click="onNavigate('spinner')">
-            <div class="card-body">
-              <div class="card-image pb-3">
-                <img
-                  src="https://image.flaticon.com/icons/svg/3205/3205208.svg"
-                  class="img-fluid"
-                  width="100"
-                  alt
-                />
-              </div>
-              <h5>Spinner</h5>
+              <h5>{{data.title}}</h5>
             </div>
           </div>
         </div>
@@ -53,8 +18,23 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Home",
+  data() {
+    return {
+      mainData: [],
+    };
+  },
+  created() {
+    axios
+      .get("main_data.json")
+      .then((res) => {
+        this.mainData = res.data;
+      })
+      .catch((err) => console.log(err));
+  },
   methods: {
     onNavigate(location) {
       this.$router.push(`/${location}`);
