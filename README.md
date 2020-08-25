@@ -12,10 +12,12 @@
 
 <b>Colors used:</b>
 
+<ul>
 <li><b>Primary:</b> #377dff</li>
 <li><b>Primary Light:</b> #2e6ad8</li>
 <li><b>Secondary:</b> #ed1d24</li>
-<li><b>Dark:</b> #1f2749</li>
+<li><b>Dark:</b> #1f2749</li>  
+</ul>
 
 <b>Storage:</b> Browser LocalStorage
 
@@ -36,12 +38,28 @@
 | 11 | vue-html-to-paper  | 1.3.1   |
 
 ## Project setup
+
 After cloning the repo, do
 ```
 npm install
 ```
 
+## Customization
+
+The customization of this appication is based on the JSON data, which is located in the [public folder](https://github.com/acodeidea/acodeidea.github.io/tree/master/public). 
+The [main_data.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/main_data.json) file has the Expense Claim, Teams Finder, and Spinner data, which is used in the home page for navigation.
+
+<b>Expense Claim:</b>
+If you want to add new expense categories or modifying the existing categories, you can directly edit into this [expense_static_data.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/expense_static_data.json) file.
+
+<b>Teams Finder & Spinner:</b>
+Like the expense claim, you're able to edit the teams list in the [teams_list.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/teams_list.json) file.
+
+Note: Only the active data is visible for the both Teams Finder and Spinner. 
+
 ### Compiles and hot-reloads for development
+
+To run this application in development server, do
 ```
 npm run serve
 ```
