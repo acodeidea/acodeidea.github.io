@@ -1,8 +1,39 @@
-# acodeidea
+# Acodeidea
 
-## Technologies Used
+## Introduction
 
-We're used Vue, Bootstrap, and Axios for this project.
+## Architecture
+
+<b>Frontend:</b> HTML, CSS, Bootstrap 4, JavaScript, Vue.js
+
+<b>Icon Library:</b> Font Awesome v5.8.1
+
+<b>Fonts Family:</b> Montserrat, Roboto, Roboto slab, Droid Serif, Helvetica Neue
+
+<b>Colors used:</b>
+
+<li><b>Primary:</b> #377dff</li>
+<li><b>Primary Light:</b> #2e6ad8</li>
+<li><b>Secondary:</b> #ed1d24</li>
+<li><b>Dark:</b> #1f2749</li>
+
+<b>Storage:</b> Browser LocalStorage
+
+<b>NPM dependencies:</b>
+
+| #  | NPM Package        | Version |
+|----|--------------------|---------|
+| 1  | axios              | 0.18.1  |
+| 2  | d3                 | 3.5.17  |
+| 3  | jquery             | 2.2.4   |
+| 4  | moment             | 2.27.0  |
+| 5  | moment-range       | 4.0.2   |
+| 6  | nprogress          | 0.2.0   |
+| 7  | popper.js          | 1.16.1  |
+| 8  | bootstrap          | 4.5.2   |
+| 9  | tabulator-tables   | 4.7.2   |
+| 10 | vee-validate       | 2.2.15  |
+| 11 | vue-html-to-paper  | 1.3.1   |
 
 ## Project setup
 After cloning the repo, do
