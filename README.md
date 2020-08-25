@@ -46,16 +46,16 @@ npm install
 
 ## Customization
 
-The customization of this appication is based on the JSON data, which is located in the [public folder](https://github.com/acodeidea/acodeidea.github.io/tree/master/public). 
-The [main_data.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/main_data.json) file has the Expense Claim, Teams Finder, and Spinner data, which is used in the home page for navigation.
+The customization of this application is based on the JSON data, which is located in the [public folder](https://github.com/acodeidea/acodeidea.github.io/tree/master/public). 
+The [main_data.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/main_data.json) file has the Expense Claim, Teams Finder, and Spinner data, which is used on the home page for navigation.
 
 <b>Expense Claim:</b>
 If you want to add new expense categories or modifying the existing categories, you can directly edit into this [expense_static_data.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/expense_static_data.json) file.
 
 <b>Teams Finder & Spinner:</b>
-Like the expense claim, you're able to edit the teams list in the [teams_list.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/teams_list.json) file.
+Like the expense claim, you're able to edit the team lists in the [teams_list.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/teams_list.json) file.
 
-Note: Only the active data is visible for the both Teams Finder and Spinner. 
+Note: Only the active data is visible for both Teams Finder and Spinner. 
 
 ### Compiles and hot-reloads for development
 
