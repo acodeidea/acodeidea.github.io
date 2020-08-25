@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-- [Introduction](#)
-- [Architecture](#)
-- [NPM dependencies](#)
-- [Customization](#)
-- [Project setup](#)
+- [Introduction](#introduction)
+- [Architecture](#architecture)
+- [NPM dependencies](#npm-dependencies)
+- [Customization](#customization)
+- [Project Setup](#project-setup)
 - [Team](#)
-- [More Updates](#)
-- [Copyright and License](#)
+- [More Updates](#more-updates)
+- [Copyright and License](#copyright-and-license)
 
 ## Introduction
 
