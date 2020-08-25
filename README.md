@@ -1,5 +1,16 @@
 # Acodeidea
 
+## Table of Contents
+
+- [Introduction](#)
+- [Architecture](#)
+- [NPM dependencies](#)
+- [Customization](#)
+- [Project setup](#)
+- [Team](#)
+- [More Updates](#)
+- [Copyright and License](#)
+
 ## Introduction
 
 ## Architecture
@@ -21,7 +32,7 @@
 
 <b>Storage:</b> Browser LocalStorage
 
-<b>NPM dependencies:</b>
+## NPM dependencies:
 
 | #  | NPM Package        | Version |
 |----|--------------------|---------|
@@ -37,13 +48,6 @@
 | 10 | vee-validate       | 2.2.15  |
 | 11 | vue-html-to-paper  | 1.3.1   |
 
-## Project setup
-
-After cloning the repo, do
-```
-npm install
-```
-
 ## Customization
 
 The customization of this application is based on the JSON data, which is located in the [public folder](https://github.com/acodeidea/acodeidea.github.io/tree/master/public). 
@@ -56,6 +60,13 @@ If you want to add new expense categories or modifying the existing categories, 
 Like the expense claim, you're able to edit the team lists in the [teams_list.json](https://github.com/acodeidea/acodeidea.github.io/blob/master/public/teams_list.json) file.
 
 Note: Only the active data is visible for both Teams Finder and Spinner. 
+
+## Project setup
+
+After cloning the repo, do
+```
+npm install
+```
 
 ### Compiles and hot-reloads for development
 
