@@ -593,8 +593,8 @@ button[aria-expanded="true"]::before {
 }
 
 .category .card:hover {
-  background: #377dff;
-  color: #ffff;
+  background: #377dff!important;
+  color: #ffff!important;
 }
 
 /* Modal */
