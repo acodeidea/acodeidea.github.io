@@ -456,12 +456,18 @@ export default {
       emp_detail: "",
       total: 0,
       isDisabled: false,
-      isChangedData: false
+      isChangedData: false,
     };
   },
   mounted() {
     var that = this;
-    var dateEditor = function(cell, onRendered, success, cancel, editorParams) {
+    var dateEditor = function (
+      cell,
+      onRendered,
+      success,
+      cancel,
+      editorParams
+    ) {
       var editor = document.createElement("input");
       editor.setAttribute("type", "date");
       editor.style.padding = "6px";
@@ -469,7 +475,7 @@ export default {
       editor.style.boxSizing = "border-box";
 
       editor.value = moment(cell.getValue(), "MM/DD/YYYY");
-      onRendered(function() {
+      onRendered(function () {
         editor.focus();
         editor.style.css = "100%";
       });
@@ -493,7 +499,7 @@ export default {
       return editor;
     };
 
-    var getDataValue = function(cell, formatterParams, onRendered) {
+    var getDataValue = function (cell, formatterParams, onRendered) {
       var value = cell.getValue();
       if (value) {
         value = moment(value, "YYYY-MM-DD").format("MM/DD/YYYY");
@@ -513,7 +519,7 @@ export default {
           field: "date",
           sorter: "date",
           editor: dateEditor,
-          formatter: getDataValue
+          formatter: getDataValue,
         },
         { title: "Description", field: "exp_name" },
         { title: "Category", field: "category_name" },
@@ -521,24 +527,24 @@ export default {
           title: "Vendor",
           field: "vendor",
           editor: "input",
-          validator: ["required", "maxLength:100"]
+          validator: ["required", "maxLength:100"],
         },
         {
           title: "Bill/Recipt Attached",
           field: "bill",
           editor: "select",
           editorParams: {
-            values: ["Yes", "No"]
-          }
+            values: ["Yes", "No"],
+          },
         },
         {
           title: "Amount",
           field: "amount",
           editor: "number",
-          validator: ["required", "numeric"]
-        }
+          validator: ["required", "numeric"],
+        },
       ],
-      rowDblClick: function(e, row) {
+      rowDblClick: function (e, row) {
         if (confirm("Are you sure to delete?")) {
           table.deleteRow(row.getData().id);
           that.emp_detail.total = that.total = that.calculateTotalPrice();
@@ -547,12 +553,12 @@ export default {
           return;
         }
       },
-      dataEdited: function(data) {
+      dataEdited: function (data) {
         // Response data for every update
         that.$emit("changed", true);
         that.emp_detail.categoryData = data;
         that.emp_detail.total = that.total = that.calculateTotalPrice();
-      }
+      },
     });
   },
   computed: {
@@ -566,7 +572,7 @@ export default {
       } else {
         return false;
       }
-    }
+    },
   },
   created() {
     this.getLocalStorageData();
@@ -582,7 +588,7 @@ export default {
     // To calculate the total price
     calculateTotalPrice() {
       var totalCalc = 0;
-      this.emp_detail.categoryData.filter(data => {
+      this.emp_detail.categoryData.filter((data) => {
         totalCalc = totalCalc + +data.amount;
       });
       return totalCalc;
@@ -596,7 +602,9 @@ export default {
     // Generate unique voucher id
     getUniqueID(id) {
       const date = new Date();
-      return `ACI/${id}/${date.getDate()}${date.getMonth()}${date.getFullYear()}/${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
+      return `ACI/${id}/${date.getDate()}${
+        date.getMonth() + 1
+      }${date.getFullYear()}/${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
     },
     // Print the form
     printForm() {
@@ -629,8 +637,8 @@ export default {
       } else {
         this.isDisabled = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
