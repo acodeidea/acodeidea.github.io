@@ -70,5 +70,16 @@
             "Chair",
             "Internet / Broadband"
         ]
+    },
+    {
+        "exp_id": 6,
+        "exp_name": "Medical",
+        "icon": "fas fa-building",
+        "category": [
+            "Consultation",
+            "Medicine",
+            "Medical Test",
+            "Other"
+        ]
     }
 ]
