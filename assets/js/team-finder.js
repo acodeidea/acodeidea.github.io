@@ -57,7 +57,7 @@ function chunkArray(arr, n) {
         if (chunkLength * (i + 1) <= arr.length) chunks.push(arr.slice(chunkLength * i, chunkLength * (i + 1)));
         generateTeamList += '<div class="col-lg-6 col-md-12 col-sm-12">'
         generateTeamList += '<div class="card">'
-        generateTeamList += '<h5 class="card-header">Team ' + alphabet[i] + '<span id=' + i + '>'
+        generateTeamList += '<h5 class="card-header">Team ' + alphabet[i] + '<span class="float-right" id=' + i + '>'
         generateTeamList += '<button type="button" class="btn btn-success" id="addBtn" onclick="addScore(' + i + ', 5)">+5</button>'
         generateTeamList += '<button type="button" class="btn btn-danger" id="subBtn" onclick="addScore(' + i + ', -5)">-5</button>'
         generateTeamList += '<button type="button" class="btn btn-success" id="addBtn" onclick="addScore(' + i + ', 10)">+10</button>'
