@@ -1,0 +1,46 @@
+[
+{
+    "id": 1,
+    "url": "/trackwise",
+    "menuName": "TRACKWISE"
+},
+{
+    "id": 2,
+    "url": "/validation-services",
+    "menuName": "VALIDATION"
+},
+{
+    "id": 3,
+    "url": "/web-services",
+    "menuName": "WEB SERVICES"
+},
+{
+    "id": 4,
+    "url": "/data-migration",
+    "menuName": "DATA MIGRATION"
+},
+{
+    "id": 5,
+    "url": "/java",
+    "menuName": "JAVA APPS"
+},
+{
+    "id": 6,
+    "url": "/process-consulting",
+    "menuName": "PROCESS CONSULTING"
+},
+{
+    "id": 7,
+    "url": "/salesforce",
+    "menuName": "SALESFORCE"
+},
+{
+    "id": 8,
+    "url": "/microsoft-dynamics-365",
+    "menuName": "MICROSOFT DYNAMICS 365"
+},
+{
+    "id": 9,
+    "url": "/oracle-netsuite",
+    "menuName": "ORACLE NETSUITE"
+}]
