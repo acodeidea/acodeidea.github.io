@@ -11,3 +11,8 @@ function myFunction() {
 // initialize AOS
 AOS.init();
 
+$(document).ready(function() {
+    $(".megamenu").on("click", function(e) {
+        e.stopPropagation();
+    });
+});
