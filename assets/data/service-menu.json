@@ -6,7 +6,7 @@
 },
 {
     "id": 2,
-    "url": "/validation-services",
+    "url": "/validation",
     "menuName": "VALIDATION"
 },
 {
@@ -41,6 +41,6 @@
 },
 {
     "id": 9,
-    "url": "/oracle-netsuit",
+    "url": "/oracle-netsuite",
     "menuName": "ORACLE NETSUITE"
 }]
