@@ -1,3 +1,9 @@
+hr.divider-dark {
+  max-width: 3.25rem;
+  border-width: 0.3rem;
+  border-color: #003b5c;
+}
+
 @media (min-width: 360px) {
     header.masthead {
         padding-top: 17rem;
