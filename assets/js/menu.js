@@ -1,6 +1,6 @@
 /*
     Menu json append to All HTML pages.
-    Developed on 23/09/2021
+    Developed on 23/09/2021.
 */
 $(document).ready(function() {
 
