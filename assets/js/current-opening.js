@@ -4,22 +4,7 @@ $(document).ready(function() {
     $.getJSON("/careers/current-openings.json",
         function(data) {
             var currentOpening = '';
-            currentOpening += '<div class="row" >'
-            currentOpening += '<div class="col-lg-3 col-md-12 col-sm-12">'
-            currentOpening += '</div>'
-            currentOpening += '<div class="col-lg-4 col-md-12 col-sm-12">'
-            currentOpening += '<h5 class="text-color-cyan">POSITION</h5>'
-            currentOpening += '</div>'
-            currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
-            currentOpening += '<h5 class="text-color-cyan">EXPERIENCE</h5>'
-            currentOpening += '</div>'
-            currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
-            currentOpening += '<h5 class="text-color-cyan text-uppercase">Headquarters</h5>'
-            currentOpening += '</div>'
-            currentOpening += '<div class="col-lg-1 col-md-12 col-sm-12">'
-            currentOpening += '</div>'
-            currentOpening += '</div>'
-            currentOpening += '<hr>'
+
             $.each(data, function(key, value) {
                 currentOpening += '  <div class="mt-2 shadow p-3 bg-white rounded zoom">'
 
@@ -46,16 +31,15 @@ $(document).ready(function() {
                 currentOpening += '<p class="text-black-75"><b>Role: </b>' + value.role + '</p>'
                 currentOpening += '<p class="text-black-75"><b>Employment Type: </b>' + value.employment_type + '</p>'
                 currentOpening += '</div>'
-                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
+                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 mt-5">'
                 currentOpening += '<p class="text-black-75">' + value.experience + '</p>'
                 currentOpening += '</div>'
-                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
+                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 mt-5">'
                 currentOpening += '<p class="text-black-75">' + value.headquarters_name + '</p>'
                 currentOpening += '</div>'
-                currentOpening += '<div class="col-lg-1 col-md-12 col-sm-12">'
+                currentOpening += '<div class="col-lg-1 col-md-12 col-sm-12 mt-5">'
                 currentOpening += '<p class="text-center"><a class="btn btn-md btn-cyan text-uppercase" href="' + value.apply_link + '">APPLY</a></p>'
                 currentOpening += '</div>'
-
                 currentOpening += '</div>'
                 currentOpening += '</div>'
             });
