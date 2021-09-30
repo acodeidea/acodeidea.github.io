@@ -7,9 +7,8 @@ $(document).ready(function() {
 
             $.each(data, function(key, value) {
                 currentOpening += '  <div class="mt-2 shadow p-3 bg-white rounded zoom">'
-
                 currentOpening += '<div class="row" >'
-                currentOpening += '<div class="col-lg-3 col-md-12 col-sm-12">'
+                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
                 currentOpening += '<span class="fa-stack fa-3x">'
                 currentOpening += '<i class="fas fa-circle fa-stack-2x text-color-cyan"></i>'
                 if (value.position_name == "JAVA DEVELOPER") {
@@ -29,7 +28,7 @@ $(document).ready(function() {
                 currentOpening += '<h5 class="text-color-dark">' + value.position_name + '</h5>'
                 currentOpening += '<br>'
                 currentOpening += '<p class="text-black-75"><b>Role: </b>' + value.role + '</p>'
-                currentOpening += '<p class="text-black-75"><b>Employment Type: </b>' + value.employment_type + '</p>'
+                // currentOpening += '<p class="text-black-75"><b>Employment Type: </b>' + value.employment_type + '</p>'
                 currentOpening += '</div>'
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 mt-5">'
                 currentOpening += '<p class="text-black-75">' + value.experience + '</p>'
@@ -37,8 +36,8 @@ $(document).ready(function() {
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 mt-5">'
                 currentOpening += '<p class="text-black-75">' + value.headquarters_name + '</p>'
                 currentOpening += '</div>'
-                currentOpening += '<div class="col-lg-1 col-md-12 col-sm-12 mt-5">'
-                currentOpening += '<p class="text-center"><a class="btn btn-md btn-cyan text-uppercase" href="' + value.apply_link + '">APPLY</a></p>'
+                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 mt-5">'
+                currentOpening += '<p class="text-center"><a class="btn btn-md btn-cyan text-uppercase" target="blank" href="' + value.apply_link + '">APPLY</a></p>'
                 currentOpening += '</div>'
                 currentOpening += '</div>'
                 currentOpening += '</div>'
