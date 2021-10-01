@@ -1,3 +1,42 @@
+/*
+    Damion font added
+*/
+@font-face {
+    font-family: damionFont;
+    src: url(Damion-Regular.ttf);
+}
+
+/*
+    Ephesis font added
+*/
+@font-face {
+    font-family: ephesisFont;
+    src: url(Ephesis-Regular.ttf);
+}
+
+/*
+    carreer title
+*/
+.career-title1{
+    font-family: damionFont,cursive,serif;
+    /*opacity: 0.1;*/
+    font-weight: normal;
+    font-size: 2rem;
+
+}
+
+/*
+    carreer title
+*/
+.career-title{
+    font-family: ephesisFont,cursive;
+    /*opacity: 0.1;*/
+    font-weight: normal;
+    font-size: 2rem;
+
+}
+
+
 hr.divider-dark {
   max-width: 3.25rem;
   border-width: 0.3rem;
