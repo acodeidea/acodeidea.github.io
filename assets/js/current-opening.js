@@ -18,7 +18,7 @@ $(document).ready(function() {
 
                 currentOpening += '<div class="row" >'
 
-                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
+                currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12 text-center">'
                 currentOpening += '<span class="fa-stack fa-3x">'
                 currentOpening += '<i class="fas fa-circle fa-stack-2x text-color-cyan"></i>'
 
@@ -38,18 +38,18 @@ $(document).ready(function() {
                 currentOpening += '</div>'
 
                 currentOpening += '<div class="col-lg-4 col-md-12 col-sm-12">'
-                currentOpening += '<h5 class="text-color-dark">' + value.position_name + '</h5>'
+                currentOpening += '<h5 class="text-color-dark text-center">' + value.position_name + '</h5>'
 
-                currentOpening += '<p class="text-black-75"><b>Role: </b>' + value.role + '</p>'
-                // currentOpening += '<p class="text-black-75"><b>Employment Type: </b>' + value.employment_type + '</p>'
+                currentOpening += '<p class="text-black-75 text-center"><b>Role: </b>' + value.role + '</p>'
+                currentOpening += '<marquee class="text-center font-red">POSITIONS OPEN</marquee>'
                 currentOpening += '</div>'
 
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
-                currentOpening += '<p class="text-black-75">' + value.experience + '</p>'
+                currentOpening += '<p class="text-black-75 text-center">' + value.experience + '</p>'
                 currentOpening += '</div>'
 
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
-                currentOpening += '<p class="text-black-75">' + value.headquarters_name + '</p>'
+                currentOpening += '<p class="text-black-75 text-center">' + value.headquarters_name + '</p>'
                 currentOpening += '</div>'
 
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
