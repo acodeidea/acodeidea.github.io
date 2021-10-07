@@ -53,5 +53,12 @@
     "name":"GOWTHAM LOGANATHAN",
     "position_name":"Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/gowtham-loganathan-740401175/"
+},
+{
+    "id":"6",
+    "image":"/assets/img/team/gopi.png",
+    "name":"GOPINATH MARIAPPAN",
+    "position_name":"Technical Manager",
+    "linkedin_url":"https://www.linkedin.com/in/gopinath-mariappan-763a681b/"
 }
 ]
