@@ -41,7 +41,7 @@ $(document).ready(function() {
                 currentOpening += '<h5 class="text-color-dark text-center">' + value.position_name + '</h5>'
 
                 currentOpening += '<p class="text-black-75 text-center"><b>Role: </b>' + value.role + '</p>'
-                currentOpening += '<marquee class="text-center font-red">POSITIONS OPEN</marquee>'
+                currentOpening += '<marquee class="text-center font-red">POSITIONS OPEN!!</marquee>'
                 currentOpening += '</div>'
 
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
