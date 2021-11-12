@@ -4,6 +4,22 @@
 */
 $(document).ready(function() {
 
+    $.getJSON("/assets/data/about-menu.json",
+        function(data) {
+            var aboutMenu = ''
+            $.each(data, function(key, value) {
+                aboutMenu += '<li>'
+                aboutMenu += '<a class="dropdown-item" href="' + value.url + '">'
+                aboutMenu += value.name
+                aboutMenu += '</a>'
+                aboutMenu += '</li>'
+            });
+            $('#about-menu').append(aboutMenu);
+        });
+
+
+
+
     // service drop dowm menu
     $.getJSON("/assets/data/service-menu.json",
         function(data) {

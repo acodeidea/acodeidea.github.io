@@ -7,7 +7,7 @@ var team = '',
 
 $(function() {
 
-    $.getJSON("/office-activity/team.json",
+    $.getJSON("/apps/team.json",
 
 
         function(data) {

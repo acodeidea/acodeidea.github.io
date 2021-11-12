@@ -1,0 +1,27 @@
+[
+	{
+		"id":"1",
+		"url":"/about/",
+		"name":"Our Company"
+	},
+	{
+		"id":"2",
+		"url":"/vision-values/",
+		"name":"Vision & Values"
+	},
+	{
+		"id":"3",
+		"url":"/story/",
+		"name":"Our Story"
+	},
+	{
+		"id":"4",
+		"url":"/team/",
+		"name":"Our Team"
+	},
+	{
+		"id":"5",
+		"url":"/testimonials/",
+		"name":"Testimonials"
+	}
+]

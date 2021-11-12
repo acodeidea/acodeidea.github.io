@@ -5,7 +5,7 @@ var count = 0;
 var item = '';
 
 $(function() {
-            $.getJSON("/office-activity/team.json",
+            $.getJSON("/apps/team.json",
 
                 function(data) {
                     $.each(data, function(key, value) {
@@ -38,7 +38,8 @@ $(function() {
                 displayResult += '<p>You got selected!!</p>'
                 displayResult += ' </div>'
                 displayResult += '</div>'
-                $('#winner-result').append(displayResult);
+                // $('#winner-result').append(displayResult);
+                $('#winner-result').html(displayResult);
 
                 $("#result" + count).html(item);
             }

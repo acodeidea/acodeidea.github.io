@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-    $.getJSON("/office-activity/office-activity.json",
+    $.getJSON("/apps/office-activity.json",
 
         function(data) {
             var activity = '';
             $.each(data, function(key, value) {
-                activity += '<div class="col-lg-4 col-md-6 col-sm-12">'
+                activity += '<div class="col-lg-6 col-md-6 col-sm-12">'
                 activity += '<div class="mt-5 shadow p-3 mb-5 bg-white rounded zoom mr-3 text-center">'
                 activity += '<span class="fa-stack fa-4x">'
                 if (value.activity == "Expense Claim") {

@@ -7,7 +7,7 @@
     <meta name="author" content="acodeidea">
     <meta name="description" content="Empower and accelerate your QMS and GxP seamlessly.">
     <meta name="keywords" content="QMS, Validation, Managed Services, IT Services, Regulated Industry, GxP, FDA, GAMP">
-    <title>Team Finder - Acodeidea | Compliance Consulting – Accelerated Consulting</title>
+    <title>Office Activity - Acodeidea | Compliance Consulting – Accelerated Consulting</title>
     <link rel="icon" type="image/x-icon" href="/assets/img/logos/acodeidea_logo1.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="/assets/js/lib/fontawesome-all.js"></script>
@@ -34,13 +34,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/home">Home</a></li>
-                    <li class="nav-item dropdown">
+                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> About </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/about/">Our Company</a></li>
-                            <li><a class="dropdown-item" href="/vision-values/">Vision & Values</a></li>
-                            <li><a class="dropdown-item" href="/story/">Our Story</a></li>
-                            <li><a class="dropdown-item" href="/team/">Our Team</a></li>
+                        <ul class="dropdown-menu" id="about-menu">
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -65,66 +61,9 @@
         </div>
     </nav>
     <br />
-    <!-- heading start -->
-    <section class="page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <h3 class="text-color-dark text-center text-uppercase">
-                        Welcome to Team Finder
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- team list -->
     <section class="page-section bg-light">
         <div class="container">
-            <div class="row" id="team-container">
-            </div>
-            <div class="row mt-5">
-                <div class="col-lg-8 col-md-12 col-sm-12">
-                    <input type="number" class="form-control" id="generateTeam">
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <button type="button" id="btnGenerate" class="btn btn-md btn-cyan text-uppercase">Generate Teams</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team List Score Board -->
-    <section class="page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <h3 class="text-color-dark text-center text-uppercase">Teams List</h3>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <p class="text-center">
-                        <button type="button" id="viewScoreBoard" class="btn btn-md btn-cyan text-uppercase">View Scoreboard</button>
-                        <button type="button" id="hideScoreBoard" class="btn btn-md text-uppercase btn-danger">Hide Scoreboard</button>
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="row mt-3" id="viewScoreBoardDetails">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <table class="table">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Teams</th>
-                                <th scope="col">Score</th>
-                            </tr>
-                        </thead>
-                        <tbody id="result-table">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row mt-3" id="generate-card-team">
+            <div class="row" id="activity-container">
             </div>
         </div>
     </section>
@@ -184,9 +123,8 @@
     <script src="/assets/js/lib/aos.js"></script>
     <!-- Core theme JS-->
     <script src="/assets/js/scripts.js"></script>
-    <script src="/assets/js/jquery.selection.js"></script>
     <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/team-finder.js"></script>
+    <script src="/assets/js/office-activity.js"></script>
     <script src="/assets/js/menu.js"></script>
 </body>
 

@@ -1,0 +1,62 @@
+[
+{
+    "id": 1,
+    "image": "/assets/img/testimonials/1.png",
+    "name": "Bobby Roy",
+    "message": "Time has passed so quickly from the days when we first started interviewing at the Le Meridien. We have overcome challenges, broke down barriers and had more fun than we could ever imagine. It has been such an inspiration to see what we have been able to build together as a team and can't wait for us to continue the journey!"
+},
+{
+	"id":2,
+	"image": "/assets/img/testimonials/1.png",
+	"name":"Nichole Pomykala",
+    "message": "My experience working with the Acodeidea team has been amazing! Everyone is incredibly knowledgeable as well as helpful! No matter how big or small a request is, they are always willing to assist! Thank you for being awesome!"
+},
+{
+    "id":3,
+    "image":"/assets/img/testimonials/2.jpg",
+    "name":"Nandhini Natarajan",
+    "message":"Acodeidea believes in Grow and Evolve together which enables them to provide an amazing culture of work-life balance, work exposure and employee evolvement. Acodeidea gives liberty to its employees to bring ideas to the table and provides all the possible support and motivation to bring that idea to life. Surprise gifts now and then are icing on the cake. This organization has provided me environment to learn, grow and evolve on both personal and professional front. Glad to be a part of this amazing family !!"
+},
+{
+    "id":4,
+    "image":"/assets/img/testimonials/3.png",
+    "name":"Sujatha Mohan",
+    "message":"I feel very proud to be one of the employees of Acodeidea. Acodeidea provides us a conducive and employee-friendly work environment. The culture we follow is really awesome. We have lot of opportunities to learn. The extraordinary knowledge transfer across different domains has benefitted a lot to us."
+},
+{
+    "id":5,
+    "image":"/assets/img/testimonials/4.png",
+    "name":"Girish Verma",
+    "message":"It’s been about three years working at Acodeidea and it has indeed been a very enriching experience for me. It is an organization which offers opportunities for everyone to foster and grow both professionally and personally. The employees are the family to the company and not just ‘Employees’. Peers at Acodeidea are extremely encouraging and talented who are always around to support at times of need. Supportive management, ample learning opportunities and meaningful rewards and recognition makes it stand apart from other consulting organizations in the market place."
+},
+{
+    "id":6,
+    "image":"/assets/img/testimonials/1.png",
+    "name":"Henry Mossi",
+    "message":"The Acodeidea and SIKICH partnership is seamless to our ITQC clients. The fact that our clients cannot distinguish between the two, is what makes us thrive. ITQC-based Acodeidea resources in particular have embraced this challenge and continue to make SIKICH proud."
+},
+{
+    "id":7,
+    "image":"/assets/img/testimonials/1.png",
+    "name":"Anand Shukla",
+    "message":"It has been an absolute pleasure working with the Acodeidea team. The team is highly talented, extremely skilled and very flexible when it comes to working on different types of projects as well as working with different timezones. There isn’t a task that they cannot complete or that they say No to. Thank you very much for all your hardwork and dedication!"
+},
+{
+    "id":8,
+    "image":"/assets/img/testimonials/5.png",
+    "name":"Mohamed Fazil",
+    "message":"MANAGEMENT: It is almost 3 years since I joined ACI. We always hear this word ZERO MICRO MANAGEMENT. And yes, till now we are not micro managed in any work what we are doing. We have full freedom do our work in our own style. I see this as a Plus in our company. Hope this continues in future even we grow larger. WORK ENVIRONMENT: As I have worked in Level 5 company, I never felt a work environment which we have in ACI. The way management cares for our employees is why we call this as ACI FAMILY."
+},
+{
+    "id":9,
+    "image":"/assets/img/testimonials/6.png",
+    "name":"Pratheesh Prabhakaran",
+    "message":"The company has a great culture. The founders treat you like a family. Support, Zero Micromanagement, Trust on our abilities, welfare of the employee, fun at work are some of the key things that comes to my mind, when I think about the last 15 months working in Acodeidea. Though I worked from home from day 1, never felt it was remote."
+},
+{
+    "id":10,
+    "image":"/assets/img/testimonials/7.png",
+    "name":"Kanimozhi Palanisamy",
+    "message":"Acodeidea is a great place to grow and develop both professionally and personally. I'm thankful to the people who believed in me and gave me this opportunity. Joining ACI has turned out to be great decision for me to work with a great group of colleagues. I'm proud to be a member of the ACI family."
+}
+]
