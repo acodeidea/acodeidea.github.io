@@ -5,7 +5,10 @@ var team = '',
     generateTeamList = '',
     resultTable = '';
 
+
 $(function() {
+    $("#error-display").hide();
+
 
     $.getJSON("/apps/team.json",
 
@@ -34,17 +37,28 @@ $("#btnGenerate").click(function() {
     selectedTeamMembers = $('input[type=checkbox]:checked').map(function(_, el) {
         return $(el).val();
     }).get();
-    // console.log(selectedTeamMembers)
-    if (generateCount > 0 && selectedTeamMembers.length !== 0) {
+    if (generateCount > 0 && generateCount <= selectedTeamMembers.length && selectedTeamMembers.length !== 0) {
         chunkArray(selectedTeamMembers, generateCount);
+
     } else {
         if (selectedTeamMembers.length === 0) {
-            alert("Please select team participants!!")
+            $("#error-display").show();
+            let message = "Please select team participants!!";
+            errorMessage(message);
         } else {
-            alert("Please enter the valid number of teams!!")
+            $("#error-display").show();
+            let message = "Please enter the valid number of teams!"
+            errorMessage(message);
         }
     }
 });
+
+function errorMessage(message) {
+    let errorMessage = ''
+    errorMessage += message
+    $('#error-message').html(errorMessage);
+
+}
 
 function chunkArray(arr, n) {
     const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
@@ -66,7 +80,6 @@ function chunkArray(arr, n) {
         generateTeamList += '<div class="card-body">'
         var teamData = chunks[i];
         $.each(teamData, function(key, value) {
-            console.log(key + "==" + value)
             if (key > 0) {
                 generateTeamList += '<p class="card-text">' + value + '</p>'
             } else {
@@ -85,12 +98,14 @@ function chunkArray(arr, n) {
 
     }
 
-    $('#result-table').append(resultTable);
-    $('#generate-card-team').append(generateTeamList);
 
-
+    $('#result-table').html(resultTable);
+    $('#generate-card-team').html(generateTeamList);
     return chunks;
 }
+
+
+
 
 $("#viewScoreBoard").click(function() {
     $("#viewScoreBoard").hide();

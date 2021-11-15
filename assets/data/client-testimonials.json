@@ -1,0 +1,26 @@
+[
+{
+    "id": 1,
+    "image": "/assets/img/testimonials/1.png",
+    "name": "Bobby Roy",
+    "message": "Time has passed so quickly from the days when we first started interviewing at the Le Meridien. We have overcome challenges, broke down barriers and had more fun than we could ever imagine. It has been such an inspiration to see what we have been able to build together as a team and can't wait for us to continue the journey!"
+},
+{
+	"id":2,
+	"image": "/assets/img/testimonials/1.png",
+	"name":"Nichole Pomykala",
+    "message": "My experience working with the Acodeidea team has been amazing! Everyone is incredibly knowledgeable as well as helpful! No matter how big or small a request is, they are always willing to assist! Thank you for being awesome!"
+},
+{
+    "id":6,
+    "image":"/assets/img/testimonials/1.png",
+    "name":"Henry Mossi",
+    "message":"The Acodeidea and SIKICH partnership is seamless to our ITQC clients. The fact that our clients cannot distinguish between the two, is what makes us thrive. ITQC-based Acodeidea resources in particular have embraced this challenge and continue to make SIKICH proud."
+},
+{
+    "id":7,
+    "image":"/assets/img/testimonials/1.png",
+    "name":"Anand Shukla",
+    "message":"It has been an absolute pleasure working with the Acodeidea team. The team is highly talented, extremely skilled and very flexible when it comes to working on different types of projects as well as working with different timezones. There isn’t a task that they cannot complete or that they say No to. Thank you very much for all your hardwork and dedication!"
+}
+]
