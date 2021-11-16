@@ -1,15 +1,23 @@
+//  team finder for office activity
+
+
+// variable declaration
 var team = '',
     selectedTeamMembers = [],
     participants = [],
     participantsIndex = {},
     generateTeamList = '',
-    resultTable = '';
+    resultTable = '',
+    message = '';
 
 
 $(function() {
+
+    // Error alert hide
     $("#error-display").hide();
 
 
+    // Load team json
     $.getJSON("/apps/team.json",
 
 
@@ -31,6 +39,7 @@ $(function() {
         });
 });
 
+//Generate button function
 $("#btnGenerate").click(function() {
     // var generateCount = parseInt($("#generateTeam option").filter(":selected").text(), 10);
     var generateCount = $('#generateTeam').val();
@@ -38,21 +47,38 @@ $("#btnGenerate").click(function() {
         return $(el).val();
     }).get();
     if (generateCount > 0 && generateCount <= selectedTeamMembers.length && selectedTeamMembers.length !== 0) {
-        chunkArray(selectedTeamMembers, generateCount);
+        if ($("#generate-card-team").find("#prev-contents").length > 0) {
+            clear();
+            chunkArray(selectedTeamMembers, generateCount);
+        } else {
+            chunkArray(selectedTeamMembers, generateCount);
+        }
 
     } else {
         if (selectedTeamMembers.length === 0) {
-            $("#error-display").show();
-            let message = "Please select team participants!!";
-            errorMessage(message);
+            // $("#error-display").show();
+            message = "Please select team participants!!";
+            alert(message);
+            // errorMessage(message);
         } else {
-            $("#error-display").show();
-            let message = "Please enter the valid number of teams!"
-            errorMessage(message);
+            // $("#error-display").show();
+            message = "Please enter the valid number of teams!"
+            alert(message);
+            // errorMessage(message);
         }
     }
 });
 
+
+// clearing previous div contents
+function clear() {
+    $('#result-table').empty();
+    $('#generate-card-team').empty();
+
+}
+
+
+// display alert error message
 function errorMessage(message) {
     let errorMessage = ''
     errorMessage += message
@@ -60,16 +86,21 @@ function errorMessage(message) {
 
 }
 
+
+// for table and card
 function chunkArray(arr, n) {
+
     const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+
+    generateTeamList = '';
+    resultTable='';
 
     var chunkLength = Math.max(arr.length / n, 1);
     var chunks = [];
 
-
     for (var i = 0; i < n; i++) {
         if (chunkLength * (i + 1) <= arr.length) chunks.push(arr.slice(chunkLength * i, chunkLength * (i + 1)));
-        generateTeamList += '<div class="col-lg-6 col-md-12 col-sm-12">'
+        generateTeamList += '<div class="col-lg-6 col-md-12 col-sm-12" id="prev-contents">'
         generateTeamList += '<div class="card">'
         generateTeamList += '<h5 class="card-header">Team ' + alphabet[i] + '<span class="float-right" id=' + i + '>'
         generateTeamList += '<button type="button" class="mr-1 btn btn-success btn-sm" id="addBtn" onclick="addScore(' + i + ', 5)">+5</button>'
@@ -78,6 +109,7 @@ function chunkArray(arr, n) {
         generateTeamList += '<button type="button" class="btn btn-danger btn-sm" id="subBtn" onclick="addScore(' + i + ', -10)">-10</button> ='
         generateTeamList += '<span id="sum' + i + '">0</span></span></h5>'
         generateTeamList += '<div class="card-body">'
+
         var teamData = chunks[i];
         $.each(teamData, function(key, value) {
             if (key > 0) {
@@ -87,6 +119,7 @@ function chunkArray(arr, n) {
             }
 
         });
+
         generateTeamList += '</div>'
         generateTeamList += '</div>'
         generateTeamList += '</div>'
@@ -98,7 +131,6 @@ function chunkArray(arr, n) {
 
     }
 
-
     $('#result-table').html(resultTable);
     $('#generate-card-team').html(generateTeamList);
     return chunks;
@@ -106,7 +138,7 @@ function chunkArray(arr, n) {
 
 
 
-
+// View/Hide score button
 $("#viewScoreBoard").click(function() {
     $("#viewScoreBoard").hide();
     $("#hideScoreBoard").show();
@@ -120,6 +152,8 @@ $("#hideScoreBoard").click(function() {
     $("#viewScoreBoardDetails").hide();
 });
 
+
+// score calculation
 function addScore(index, point) {
     try {
         var scoreSpan = $("#sum" + index);
