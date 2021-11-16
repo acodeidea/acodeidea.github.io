@@ -13,13 +13,8 @@ var team = '',
 
 $(function() {
 
-    // Error alert hide
-    $("#error-display").hide();
-
-
     // Load team json
     $.getJSON("/apps/team.json",
-
 
         function(data) {
             $("#viewScoreBoardDetails").hide();
@@ -41,11 +36,13 @@ $(function() {
 
 //Generate button function
 $("#btnGenerate").click(function() {
+
     // var generateCount = parseInt($("#generateTeam option").filter(":selected").text(), 10);
     var generateCount = $('#generateTeam').val();
     selectedTeamMembers = $('input[type=checkbox]:checked').map(function(_, el) {
         return $(el).val();
     }).get();
+
     if (generateCount > 0 && generateCount <= selectedTeamMembers.length && selectedTeamMembers.length !== 0) {
         if ($("#generate-card-team").find("#prev-contents").length > 0) {
             clear();
@@ -56,19 +53,28 @@ $("#btnGenerate").click(function() {
 
     } else {
         if (selectedTeamMembers.length === 0) {
-            // $("#error-display").show();
-            message = "Please select team participants!!";
-            alert(message);
-            // errorMessage(message);
+            displayTimeOut();
+            message = "Please select team participants!";
+            // alert(message);
+            errorMessage(message);
         } else {
-            // $("#error-display").show();
+            displayTimeOut();
             message = "Please enter the valid number of teams!"
-            alert(message);
-            // errorMessage(message);
+            // alert(message);
+            errorMessage(message);
         }
     }
 });
 
+
+// show/hide alert message
+function displayTimeOut() {
+    $("#error-display").fadeIn(100);
+
+    setTimeout(function() {
+        $('#error-display').fadeOut(1000);
+    }, 5000);
+}
 
 // clearing previous div contents
 function clear() {
@@ -93,7 +99,7 @@ function chunkArray(arr, n) {
     const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
 
     generateTeamList = '';
-    resultTable='';
+    resultTable = '';
 
     var chunkLength = Math.max(arr.length / n, 1);
     var chunks = [];
@@ -164,6 +170,6 @@ function addScore(index, point) {
         $(tableSpan).html(currentScore);
 
     } catch (err) {
-        alert('Error occured: ' + err.message);
+        console.log('Error occured: ' + err.message);
     }
 }
