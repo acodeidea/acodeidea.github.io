@@ -54,7 +54,7 @@ $(document).ready(function() {
 
                 currentOpening += '<div class="col-lg-2 col-md-12 col-sm-12">'
                 currentOpening += '<p class="text-center"><a class="btn btn-md btn-cyan text-uppercase" target="blank" href="' + value.apply_link + '">APPLY</a></p>'
-                currentOpening += '<p class="text-center text-black-75">hr[at]acodeidea.com</p>'
+                currentOpening += '<p class="text-center text-black-75"><a class="text-color-dark" target="_blank" href="mailto:hr@acodeidea.com">hr@acodeidea.com</a></p>'
                 currentOpening += '</div>'
                 currentOpening += '</div>'
 
