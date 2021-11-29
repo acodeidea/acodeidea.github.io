@@ -60,5 +60,12 @@
     "name":"GOPINATH MARIAPPAN",
     "position_name":"Senior Technical Manager",
     "linkedin_url":"https://www.linkedin.com/in/gopinath-mariappan-763a681b/"
+},
+{
+    "id":"10",
+    "image":"/assets/img/team/chanchal.png",
+    "name":"CHANCHAL JAIN",
+    "position_name":"Senior Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/chanchal-jain-31885a144/"
 }
 ]
