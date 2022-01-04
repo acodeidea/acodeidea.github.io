@@ -82,5 +82,19 @@
     "name":"NIVEDHITHA RAMKENNEDY",
     "position_name":"Validation Engineer",
     "linkedin_url":"https://www.linkedin.com/in/nivedhitha-r-a9b59079"
+},
+{
+    "id":"17",
+    "image":"/assets/img/team/varun.jpeg",
+    "name":"VARUN NANJAN",
+    "position_name":"Project Manager",
+    "linkedin_url":"https://www.linkedin.com/in/varun-nanjan-9297b9222/"
+},
+{
+    "id":"18",
+    "image":"/assets/img/team/gopal.jpeg",
+    "name":"GOPALAKRISHNAN R",
+    "position_name":"Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/r-gopalakrishnan/"
 }
 ]
