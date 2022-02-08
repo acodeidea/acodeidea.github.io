@@ -15,16 +15,16 @@
 },
 {
     "id":"5",
-    "image":"/assets/img/team/fazil.png",
+    "image":"/assets/img/team/Fazil.jpg",
     "name":"MOHAMED FAZIL",
-    "position_name":"Validation Engineer",
+    "position_name":"Senior Validation Engineer",
     "linkedin_url":"https://www.linkedin.com/in/mohamed-fazil-683a6b81/"
 },
 {
     "id":"7",
     "image":"/assets/img/team/Girish.png",
     "name":"GIRISH VERMA",
-    "position_name":"Senior Software Engineer",
+    "position_name":"Technical Lead",
     "linkedin_url":"https://www.linkedin.com/in/girish-verma-91611a138/"
 },
 {
@@ -45,7 +45,7 @@
     "id":"11",
     "image":"/assets/img/team/pratheesh.png",
     "name":"PRATHEESH PRABHAKARAN",
-    "position_name":"Project Manager",
+    "position_name":"Senior Program Manager",
     "linkedin_url":"https://www.linkedin.com/in/pratheesh-p-cbe/"
 },
 {
