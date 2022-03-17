@@ -110,5 +110,12 @@
     "name":"Pushparaj Mehta",
     "position_name":"Validation Engineer",
     "linkedin_url":"https://www.linkedin.com/in/pushparaj-mehta-45ba86204/"
+},
+{
+    "id":"21",
+    "image":"/assets/img/team/subhasis.jpg",
+    "name":"Subhasis Panda",
+    "position_name":"Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/subhasis-panda-731089206/"
 }
 ]
