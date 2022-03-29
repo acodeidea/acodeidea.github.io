@@ -117,5 +117,13 @@
     "name":"Subhasis Panda",
     "position_name":"Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/subhasis-panda-731089206/"
+},
+{
+    "id":"22",
+    "image":"/assets/img/team/Sudheer.jpg",
+    "name":"Sudheer Mavaluru",
+    "position_name":"Senior Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/sudheer-mavaluru-6727631b/"
 }
+
 ]
