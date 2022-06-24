@@ -131,5 +131,12 @@
     "name":"MYTHILI KANNAN",
     "position_name":"Senior Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/mythili-kannan-129aa599/"
+},
+{
+    "id":"24",
+    "image":"/assets/img/team/Utkarsh.jpg",
+    "name":"UTKARSH GUPTA",
+    "position_name":"Technical Architect",
+    "linkedin_url":"https://www.linkedin.com/in/utkarsh-gupta-88210973/"
 }
 ]
