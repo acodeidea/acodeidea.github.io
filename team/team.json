@@ -138,5 +138,12 @@
     "name":"UTKARSH GUPTA",
     "position_name":"Technical Architect",
     "linkedin_url":"https://www.linkedin.com/in/utkarsh-gupta-88210973/"
+},
+{
+    "id":"25",
+    "image":"/assets/img/team/rahul.jpeg",
+    "name":"RAHUL KUMAR",
+    "position_name":"Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/rahul-kumar-477aa0144/"
 }
 ]
