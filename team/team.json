@@ -145,5 +145,12 @@
     "name":"RAHUL KUMAR",
     "position_name":"Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/rahul-kumar-477aa0144/"
+},
+{
+    "id":"26",
+    "image":"/assets/img/team/Vimal.jpg",
+    "name":"VIMALRAJ",
+    "position_name":"Validation Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/vimal-raj-m-861630166"
 }
 ]
