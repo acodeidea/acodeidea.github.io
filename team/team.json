@@ -166,5 +166,12 @@
     "name":"SHRIHARI SEKAR",
     "position_name":"Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/shrihari-s-873848241"
+},
+{
+    "id":"29",
+    "image":"/assets/img/team/hari_.jpg",
+    "name":"HARISANKAR PALANISAMY",
+    "position_name":"Test Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/harisankar194"
 }
 ]
