@@ -173,5 +173,19 @@
     "name":"HARISANKAR PALANISAMY",
     "position_name":"Test Engineer",
     "linkedin_url":"https://www.linkedin.com/in/harisankar194"
+},
+{
+    "id":"30",
+    "image":"/assets/img/team/Abinaya.jpg",
+    "name":"ABINAYA SHANMUGHAN",
+    "position_name":"Senior Test Engineer",
+    "linkedin_url":"http://https//www.linkedin.com/in/abinaya-shanmughan-4b7710253"
+},
+{
+    "id":"31",
+    "image":"/assets/img/team/kalaimathi.jpg",
+    "name":"KALAIMADHI ANAND",
+    "position_name":"Project Manager",
+    "linkedin_url":"http://www.linkedin.com/in/kalaianand"
 }
 ]
