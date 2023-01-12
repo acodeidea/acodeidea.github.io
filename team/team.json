@@ -154,13 +154,6 @@
     "linkedin_url":"https://www.linkedin.com/in/vimal-raj-m-861630166"
 },
 {
-    "id":"27",
-    "image":"/assets/img/team/varun.jpg",
-    "name":"VARUNKUMAR REDDY NANDYALA",
-    "position_name":"Software Engineer",
-    "linkedin_url":"https://www.linkedin.com/in/varun-reddy-nandyala-7ab0b619a"
-},
-{
     "id":"28",
     "image":"/assets/img/team/hari.jpg",
     "name":"SHRIHARI SEKAR",
@@ -194,5 +187,13 @@
     "name":"SHONA DHANABALAN",
     "position_name":"Manager - Sales & Marketing",
     "linkedin_url":"https://www.linkedin.com/in/shona-dhanabalan-3931759b/"
+},
+{
+    "id":"33",
+    "image":"/assets/img/team/Praba.jpg",
+    "name":"PRABAKAR R",
+    "position_name":"Design Lead",
+    "linkedin_url":"https://www.linkedin.com/in/prabakar-r-8847a072/"
 }
+
 ]
