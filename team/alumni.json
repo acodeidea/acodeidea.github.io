@@ -74,5 +74,16 @@
     "name":"VARUNKUMAR REDDY NANDYALA",
     "position_name":"Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/varun-reddy-nandyala-7ab0b619a"
-}
+},{
+    "id":"9",
+    "image":"/assets/img/team/krishna.png",
+    "name":"KRISHNAKUMAR SANKARANKUTTY",
+    "position_name":"Senior Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/krishna-kumar-sankarankutty-660960179/"
+},
+  {
+    "teamId": 35,
+    "name":"Shrihari Sekar",
+    "active": true
+  }
 ]
