@@ -81,9 +81,11 @@
     "position_name":"Senior Software Engineer",
     "linkedin_url":"https://www.linkedin.com/in/krishna-kumar-sankarankutty-660960179/"
 },
-  {
-    "teamId": 35,
-    "name":"Shrihari Sekar",
-    "active": true
-  }
+{
+    "id":"28",
+    "image":"/assets/img/team/hari.jpg",
+    "name":"SHRIHARI SEKAR",
+    "position_name":"Software Engineer",
+    "linkedin_url":"https://www.linkedin.com/in/shrihari-s-873848241"
+}
 ]
