@@ -187,5 +187,19 @@
     "name":"YUVAKIRITHIKA THANGAVEL",
     "position_name":"HR Administrator",
     "linkedin_url":"https://www.linkedin.com/in/yuva-kirithika-thangavel-19278526a/"
+},
+{
+    "id":"35",
+    "image":"/assets/img/team/Rohit.jpg",
+    "name":"ROHIT SINGH",
+    "position_name":"Senior Data Analyst",
+    "linkedin_url":" https://www.linkedin.com/in/rohit-singh-b87a7a93"
+},
+{
+    "id":"36",
+    "image":"/assets/img/team/Arti.JPG",
+    "name":"ARTI UPLENCHWAR",
+    "position_name":"Associate Project Manager",
+    "linkedin_url":"https://www.linkedin.com/in/arti-uplenchwar-13318632"
 }
 ]
