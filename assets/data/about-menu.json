@@ -24,4 +24,10 @@
 		"url":"/testimonials/",
 		"name":"Testimonials"
 	}
+	,
+	{
+		"id":"6",
+		"url":"/news-press-release/",
+		"name":"Press Release"
+	}
 ]
